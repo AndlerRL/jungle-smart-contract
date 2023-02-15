@@ -1,1 +1,0 @@
-// * Registering an account action

@@ -2,10 +2,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cpp-gen": "npx eosio-tsc -b ./src/scripts/contracts.ts",
-    "build": "eosio-cpp -abigen -I include -contract andlerjungl1 -o andlerjungl1.wasm ./deployment/andlerjungl1.cpp",
+    "build": "eosio-cpp -abigen -I include -contract jungle4andler -o jungle4andler.wasm ./deployment/jungle4andler.cpp",
     "deploy": "node-ts ./src/scripts/deploy.ts"
   },
   "dependencies": {
+    "@greymass/eosio": "^0.6.8",
     "env-var": "^7.3.0",
     "eosjs": "^22.1.0",
     "eosjs-api": "^7.0.4",
@@ -16,6 +17,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^18.13.0",
     "@types/node-fetch": "^2.6.2",
     "@types/text-encoding": "^0.0.36",
     "typescript": "^4.5.4"
