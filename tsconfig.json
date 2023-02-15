@@ -1,0 +1,27 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJs"
+    }
+  },
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "strict": true,
+    "noEmit": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["dom", "ES2020"],
+    "outDir": "./build",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "@/*": ["./*"]
+    },
+  },
+  "include": ["**/*.ts", "**/*.tsx"]
+}
